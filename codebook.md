@@ -8,6 +8,19 @@ set aggregated by subject (a value from 1-30) and activity (one of 'walking', 'w
 The columns included in the aggregation are the mean and standard deviation columns from the original data set.
 Below are the column numbers with the corresponding variable name and description.  
 
+Information to decipher the descriptions:
+-a prefix of t denotes that the measurement was taken in the time domain
+-a prefix of f denotes that the measurement was taken in the frequency domain
+-the X,Y, and Z suffixes denote which directional component the measurement is in
+-ACC denotes the original signal was from the accelerometer, with 'Body' and 'Gravity'
+   denoting the respective components of the acceleration signal
+-GYRO denotes the original signal was from the gyroscope
+-Jerk signals are denoted with 'Jerk' in the description
+-The original columns contained either the mean or std deviation of these measurements (denoted in 
+   each variable name).  The tidy data set contains means of the original values (so either an average
+   of averages or an average of standard deviations).
+
+
  [1] "tBodyAcc-mean()-X"          
  [2] "tBodyAcc-mean()-Y"          
  [3] "tBodyAcc-mean()-Z"          
